@@ -94,3 +94,10 @@ cat log.txt | claude -p "幫我分析錯誤"
 - pipe
 - session resume
 - 自動 agent 工作流
+
+## claude code 使用 ollama models
+
+$env:ANTHROPIC_AUTH_TOKEN="ollama"
+$env:ANTHROPIC_API_KEY=""
+$env:ANTHROPIC_BASE_URL="http://220.135.135.29:11436"
+claude --model qwen3.5:9b
